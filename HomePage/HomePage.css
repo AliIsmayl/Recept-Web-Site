@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.homePage {
+  background: red;
+  height: 100vh;
+}
+header {
+  background-image: url("https://savory.qodeinteractive.com/wp-content/uploads/2016/11/urban-home-slide1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+header p {
+  font-size: 80px;
+  color: white;
+  max-width: 90%;
+  font-family: "Dancing Script", cursive;
+}
+.firstBox {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.firstBox p {
+  font-family: "Dancing Script", cursive;
+
+  font-size: 30px;
+  padding: 20px;
+  max-width: 30%;
+}
+.infoBox {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 20px;
+}
+footer {
+  background: #50554f;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+footer .footerUpBox {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.footerUpBox .footerLeftBox {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerUpBox .footerRightBox {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerRightBox i {
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+.socialMedia {
+  display: flex;
+  gap: 10px;
+}
+.footerLeftBox span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.footerRightBox span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 713px) {
+  .firstBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstBox p {
+    max-width: 90%;
+  }
+  .infoBox {
+    padding: 20px 0px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .footerUpBox .footerRightBox {
+    width: 310px;
+  }
+  .footerUpBox .footerLeftBox {
+    width: 310px;
+  }
+}

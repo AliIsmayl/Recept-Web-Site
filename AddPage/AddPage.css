@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.addPage {
+  background: #1b1b1b;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  min-height: 86.5vh;
+  color: white;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.addBox {
+  width: 320px;
+  padding: 20px;
+  position: relative;
+}
+.pictureAddBox p {
+  margin: 0 0 10px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+.pictureAddBox input {
+  opacity: 0;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  cursor: pointer !important;
+
+}
+.pictureAddBox i {
+  font-size: 40px;
+  cursor: pointer;
+}
+.receptAddBox {
+  padding: 20px 0px;
+}
+.receptAddBox input {
+  width: 100%;
+  height: 40px;
+  padding: 2px 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.receptAddBox p {
+  font-size: 25px;
+  font-weight: 600;
+}
+.receptAddBox i {
+  cursor: pointer;
+  margin-left: 260px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.addPageDownBox {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.addPageDownBox p {
+  font-size: 25px;
+  font-weight: 600;
+}
+.addPageDownBox button {
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "Encode Sans Expanded", sans-serif;
+
+}
+.addPageDownBox textarea {
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  padding: 5px;
+}
+@media only screen and (max-width: 863px) {
+  .addPage {
+    flex-direction: column;
+  }
+  .addPageDownBox textarea {
+    width: 100%;
+  }
+}
